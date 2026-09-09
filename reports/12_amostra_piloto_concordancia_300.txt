@@ -1,0 +1,63 @@
+Relatorio da amostra piloto de concordancia da RQ3
+========================================================================
+Arquivo de entrada: D:\mestrado-temporario\DadosWelysonColetaNova\files\03_idioma\08_comentarios_corpus_ingles_periodo.csv
+Arquivo de saida: D:\mestrado-temporario\DadosWelysonColetaNova\files\05_caracterizacao_corpus\11_amostra_piloto_concordancia_300_comentarios.csv
+Seed aleatoria: 42
+CSV de entrada reparado apenas em memoria: False
+Subconjunto de: D:\mestrado-temporario\DadosWelysonColetaNova\files\05_caracterizacao_corpus\10_amostra_rotulacao_completa_4800_comentarios.csv
+Uso: piloto de calibracao do protocolo; nao substitui a concordancia final dos 4800 comentarios.
+
+Premissas
+- Comentarios unicos apos deduplicacao por texto normalizado.
+- Comentarios com mais de 25 caracteres apos strip().
+- Periodo: 2018 a 2025.
+- Classes elegiveis: C1-C6; sem_classe excluido.
+- sample_class indica o estrato de amostragem, nao um rotulo exclusivo.
+- Cabecalho mantido compativel com o CSV antigo de entrada do software de rotulacao.
+- Comentarios e replies sao tratados como comentarios para a rotulacao.
+- A amostra balanceada nao estima prevalencia real das classes no corpus.
+
+Totais de filtragem
+Comentarios antes da deduplicacao: 260791
+Comentarios duplicados removidos: 25370
+Comentarios apos deduplicacao: 235421
+Comentarios no periodo 2018-2025: 235421
+Comentarios com mais de 25 caracteres: 211277
+Comentarios com pelo menos uma classe: 151770
+Comentarios elegiveis finais: 141454
+Comentarios elegiveis multirrotulo: 43546
+Comentarios elegiveis sem classe excluidos: 69823
+
+Contagens elegiveis por classe (>25 chars)
+C1: 72753 (37.63% das associacoes de classe elegiveis)
+C2: 20794 (10.75% das associacoes de classe elegiveis)
+C3: 72851 (37.68% das associacoes de classe elegiveis)
+C4: 5288 (2.73% das associacoes de classe elegiveis)
+C5: 15665 (8.10% das associacoes de classe elegiveis)
+C6: 5999 (3.10% das associacoes de classe elegiveis)
+
+Cotas finais por classe (50 por classe)
+C1: 50 / 50
+C2: 50 / 50
+C3: 50 / 50
+C4: 50 / 50
+C5: 50 / 50
+C6: 50 / 50
+
+Cotas finais por classe e ano
+Classe	2018	2019	2020	2021	2022	2023	2024	2025	Total
+C1	0	1	3	5	7	11	11	12	50
+C2	0	1	2	5	8	11	11	12	50
+C3	0	1	3	7	8	10	10	11	50
+C4	0	1	3	6	6	10	10	14	50
+C5	0	1	2	6	8	12	10	11	50
+C6	0	1	3	6	4	8	9	19	50
+
+Validacoes
+OK: linhas geradas = 300.
+OK: nenhum comment_normalized repetido.
+OK: todos os comentarios tem mais de 25 caracteres.
+OK: nenhuma linha com sample_class=sem_classe.
+OK: cotas por sample_class conferem.
+OK: cotas por sample_class e sample_year conferem.
+OK: amostra piloto e subconjunto da amostra completa.

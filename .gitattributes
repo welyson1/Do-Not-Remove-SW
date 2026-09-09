@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Handle CSV line endings to avoid diff issues
+*.csv filter=lfs diff=lfs merge=lfs -text

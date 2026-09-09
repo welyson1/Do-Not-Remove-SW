@@ -1,0 +1,61 @@
+Relatorio da amostra balanceada de rotulacao completa da RQ3
+========================================================================
+Arquivo de entrada: D:\mestrado-temporario\DadosWelysonColetaNova\files\03_idioma\08_comentarios_corpus_ingles_periodo.csv
+Arquivo de saida: D:\mestrado-temporario\DadosWelysonColetaNova\files\05_caracterizacao_corpus\10_amostra_rotulacao_completa_4800_comentarios.csv
+Seed aleatoria: 42
+CSV de entrada reparado apenas em memoria: False
+Desenho de anotacao: os mesmos 4800 comentarios serao rotulados por 3 rotuladores fixos.
+
+Premissas
+- Comentarios unicos apos deduplicacao por texto normalizado.
+- Comentarios com mais de 25 caracteres apos strip().
+- Periodo: 2018 a 2025.
+- Classes elegiveis: C1-C6; sem_classe excluido.
+- sample_class indica o estrato de amostragem, nao um rotulo exclusivo.
+- Cabecalho mantido compativel com o CSV antigo de entrada do software de rotulacao.
+- Comentarios e replies sao tratados como comentarios para a rotulacao.
+- A amostra balanceada nao estima prevalencia real das classes no corpus.
+
+Totais de filtragem
+Comentarios antes da deduplicacao: 260791
+Comentarios duplicados removidos: 25370
+Comentarios apos deduplicacao: 235421
+Comentarios no periodo 2018-2025: 235421
+Comentarios com mais de 25 caracteres: 211277
+Comentarios com pelo menos uma classe: 151770
+Comentarios elegiveis finais: 141454
+Comentarios elegiveis multirrotulo: 43546
+Comentarios elegiveis sem classe excluidos: 69823
+
+Contagens elegiveis por classe (>25 chars)
+C1: 72753 (37.63% das associacoes de classe elegiveis)
+C2: 20794 (10.75% das associacoes de classe elegiveis)
+C3: 72851 (37.68% das associacoes de classe elegiveis)
+C4: 5288 (2.73% das associacoes de classe elegiveis)
+C5: 15665 (8.10% das associacoes de classe elegiveis)
+C6: 5999 (3.10% das associacoes de classe elegiveis)
+
+Cotas finais por classe (800 por classe)
+C1: 800 / 800
+C2: 800 / 800
+C3: 800 / 800
+C4: 800 / 800
+C5: 800 / 800
+C6: 800 / 800
+
+Cotas finais por classe e ano
+Classe	2018	2019	2020	2021	2022	2023	2024	2025	Total
+C1	7	15	42	88	116	169	170	193	800
+C2	4	9	34	82	120	177	176	198	800
+C3	8	18	56	106	123	161	156	172	800
+C4	5	22	46	93	94	151	161	228	800
+C5	9	13	39	93	126	193	157	170	800
+C6	8	22	42	96	62	130	143	297	800
+
+Validacoes
+OK: linhas geradas = 4800.
+OK: nenhum comment_normalized repetido.
+OK: todos os comentarios tem mais de 25 caracteres.
+OK: nenhuma linha com sample_class=sem_classe.
+OK: cotas por sample_class conferem.
+OK: cotas por sample_class e sample_year conferem.

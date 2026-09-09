@@ -1,0 +1,14 @@
+Relatorio de cobertura da etapa de topicos
+========================================================================
+Comentarios no corpus final em ingles: 265301
+Comentarios no corpus do periodo analitico: 260791
+Comentarios vazios removidos: 0
+Comentarios curtos removidos (<15 caracteres): 21143
+Comentarios duplicados por texto removidos: 11837
+Comentarios na base de topicos: 227811
+Comentarios unicos no arquivo legado de topicos: 231110
+Textos com conflito de topic_id no legado: 2
+Comentarios alinhados com topic_id: 227703
+Comentarios sem correspondencia no legado: 108
+
+Observacao: a base de topicos usa texto normalizado, comentario minimo de 15 caracteres e deduplicacao por texto.

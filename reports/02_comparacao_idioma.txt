@@ -1,0 +1,70 @@
+Relatorio de comparacao de idioma
+========================================================================
+Total de comentarios analisados: 612760
+
+fastText
+--------------------------------
+Ingles (en): 305673 (49.88%)
+Portugues (pt): 108510 (17.71%)
+Top 10 idiomas:
+  en: 305673 (49.88%)
+  pt: 108510 (17.71%)
+  es: 54895 (8.96%)
+  ru: 29685 (4.84%)
+  fr: 15470 (2.52%)
+  id: 11837 (1.93%)
+  it: 8239 (1.34%)
+  uz: 7515 (1.23%)
+  sv: 6285 (1.03%)
+  de: 5459 (0.89%)
+
+langdetect
+--------------------------------
+Ingles (en): 259902 (42.41%)
+Portugues (pt): 103118 (16.83%)
+Top 10 idiomas:
+  en: 259902 (42.41%)
+  pt: 103118 (16.83%)
+  es: 52237 (8.52%)
+  id: 21398 (3.49%)
+  ru: 19060 (3.11%)
+  error: 15743 (2.57%)
+  fr: 14788 (2.41%)
+  so: 12200 (1.99%)
+  bg: 10845 (1.77%)
+  it: 9001 (1.47%)
+
+langid
+--------------------------------
+Ingles (en): 287270 (46.88%)
+Portugues (pt): 96240 (15.71%)
+Top 10 idiomas:
+  en: 287270 (46.88%)
+  pt: 96240 (15.71%)
+  es: 54486 (8.89%)
+  ru: 15519 (2.53%)
+  fr: 14225 (2.32%)
+  id: 13055 (2.13%)
+  it: 8167 (1.33%)
+  ja: 7042 (1.15%)
+  sv: 5905 (0.96%)
+  zh: 5383 (0.88%)
+
+Concordancia entre ferramentas
+--------------------------------
+Total com concordancia completa: 438317 (71.53%)
+Maioria em ingles (2 de 3): 281948 (46.01%)
+Maioria em portugues (2 de 3): 103107 (16.83%)
+
+Distribuicao do nivel de concordancia:
+  3 ferramentas: 438317 (71.53%)
+  2 ferramentas: 91336 (14.91%)
+  1 ferramentas: 83107 (13.56%)
+
+Casos de discordancia relevantes:
+  fastText=pt e outras duas=en: 310
+  fastText=en e outras duas=pt: 436
+  langdetect discorda das outras duas: 40293
+  langid discorda das outras duas: 33318
+
+Regra operacional sugerida: usar maioria simples de 2 entre 3 ferramentas.

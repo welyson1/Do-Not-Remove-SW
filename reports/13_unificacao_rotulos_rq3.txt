@@ -1,0 +1,15 @@
+Relatorio de unificacao de rotulos e concordancia da RQ3
+========================================================================
+Amostra completa: D:\mestrado-temporario\DadosWelysonColetaNova\files\05_caracterizacao_corpus\10_amostra_rotulacao_completa_4800_comentarios.csv
+Amostra piloto: D:\mestrado-temporario\DadosWelysonColetaNova\files\05_caracterizacao_corpus\11_amostra_piloto_concordancia_300_comentarios.csv
+
+Validacao das amostras
+Completa: 4800 linhas.
+Piloto: 300 linhas.
+OK: piloto e subconjunto da amostra completa.
+
+Piloto
+Pendente: informe 3 arquivos em --pilot-labels para calcular a concordancia preliminar do piloto.
+
+Arquivo final
+Pendente: informe 3 arquivos em --full-labels para gerar o CSV final com os 4800 comentarios.

@@ -1,0 +1,93 @@
+Relatorio de precisao das classes da RQ3
+========================================================================
+Arquivo auditado: 06_auditoria_precisao_classes.csv
+Linhas no template: 300
+
+Resultados por classe
+C1
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 48
+  Considerados incorretos: 2
+  Precisao: 96.00% (IC95%: 86.54% a 98.90%)
+  Exemplos de falso positivo:
+  - In this App I built it using a component.
+Check https://www.youtube.com/watch?v=KR9d3meY9BE
+  - How about Nowa? ✨️
+
+C2
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 46
+  Considerados incorretos: 4
+  Precisao: 92.00% (IC95%: 81.16% a 96.85%)
+  Exemplos de falso positivo:
+  - If your email includes an issue or query you need help with, then I would recommend to please post your issue/query with screenshots on the forums at https://powerusers.microsoft.com 
+Note: I receive 100s of emails with requests for help and it is not possible to do so. Forums is the best place for posting issues.
+I also go to forums to assist but only in my free time.
+  - Check documentation on managed properties in search. There are many managed properties already pre created that you can use by simply mapping your crawled properties to it. 
+I have not come across any issues hence not sure why its not working in your scenario.
+  - Not sure as I have not experienced this issue.
+I will recommend posting your issue with screenshots on the forums at https://powerusers.microsoft.com
+
+C3
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 48
+  Considerados incorretos: 2
+  Precisao: 96.00% (IC95%: 86.54% a 98.90%)
+  Exemplos de falso positivo:
+  - Yeah pulling in Excel locally can be super helpful 
+
+PowerApps Import from Excel vs. Excel Online Business
+https://youtu.be/TiFVQ8UrjDM
+  - @@RoboNuggets, I'm not sure why I can join from Nigeria. It kept saying "Skool is currently offline, so we can release updates. We appreciate your patience."
+
+C4
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 44
+  Considerados incorretos: 6
+  Precisao: 88.00% (IC95%: 76.19% a 94.38%)
+  Exemplos de falso positivo:
+  - 【Custom AI Agent Development Services】
+
+Solving enterprise AI agent pain points: industry data integration, private knowledge bases, lightweight deployment, few-shot training.
+
+Drop your requirements (e.g., "Manufacturing QA + defect labeling"), get solution framework + budget estimate in 1 hour.
+
+20+ industry case studies available (PM for access).
+  - @namananand2364 Check in SharePoint. Difficult to provide guidance here on chat. I will recommend posting your issue with screenshots on the forums at https://powerusers.microsoft.com/
+  - I am not aware of any dates related to feature enhancements.
+Best place to look at is the documentation at https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-print#known-limitations
+
+C5
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 46
+  Considerados incorretos: 4
+  Precisao: 92.00% (IC95%: 81.16% a 96.85%)
+  Exemplos de falso positivo:
+  - Execellent Course on Power app
+  - Is there a way to export a template with its custom components?
+  - Please contact me I need your help 🙏🙏
+
+C6
+  Amostrados: 50
+  Auditados: 50
+  Pendentes: 0
+  Confirmados como corretos: 45
+  Considerados incorretos: 5
+  Precisao: 90.00% (IC95%: 78.64% a 95.65%)
+  Exemplos de falso positivo:
+  - lol licensing is feasible when your company is small, but when you have 86,000 employees, it's not very feasible to talk management into that
+  - bro  can u teach me 1-1 for cheaper price i want to join
+  - Lol yeah dude they actually took it down because that was the old version, with the new version you can use whatever integration you want
+
+Resumo agregado
+Macro-precisao nas classes auditadas: 92.33%

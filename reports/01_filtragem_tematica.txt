@@ -1,0 +1,26 @@
+Relatorio de filtragem tematica - 2026-03-12 22:45:08
+========================================================================
+
+Secao 1. Videos
+1. Total bruto: 43968
+2. Duplicatas removidas: 0
+3. Datas invalidas removidas: 8
+4. Fora do periodo de estudo removidos: 0
+5. Removidos pelo filtro positivo: 10820
+6. Removidos pelo filtro negativo: 3471
+7. Videos finais: 29669
+
+Secao 2. Comentarios
+1. Total bruto: 5686105
+2. Duplicatas removidas: 34383
+3. Removidos por nao pertencerem aos videos finais: 5038962
+4. Comentarios finais: 612760
+
+Secao 3. Parametros
+Filtro positivo: termos de low-code e no-code no titulo ou descricao.
+Filtro negativo: termos nao relacionados ao dominio.
+Total de termos positivos: 142
+Total de termos negativos: 27
+
+Arquivo de videos: 01_videos_filtrados_tematica.csv
+Arquivo de comentarios: 02_comentarios_filtrados_tematica.csv

@@ -1,0 +1,68 @@
+Relatorio de teste de sanidade das classes da RQ3
+========================================================================
+Objetivo: aplicar dicionarios lexicais no nivel do comentario apos deduplicacao para verificar se a taxonomia produz sinais plausiveis.
+Comentarios antes da deduplicacao: 260791
+Comentarios duplicados removidos: 25370 (9.73%)
+Comentarios analisados: 235421
+Comentarios de topo: 139964
+Replies: 95457
+Comentarios com pelo menos uma classe: 151770 (64.47%)
+Comentarios multirrotulo: 43811 (18.61%)
+Comentarios sem classe: 83651 (35.53%)
+
+Contagens por classe
+C1 | Pergunta, pedido de ajuda ou pedido de tutorial | 74918 (31.82%) | topo=56926 | replies=17992
+  Regras mais frequentes: question_mark=60452, can_you=7485, can_i=6951, tutorial_request=6548, please_make_video=5586, please_request=5327, how_to_request=4447, how_can=3484
+C2 | Relato de problema, erro, falha ou limitacao operacional | 21033 (8.93%) | topo=13269 | replies=7764
+  Regras mais frequentes: error=5148, issue_context=4702, fix_or_resolve=3347, cant_operational=2751, blank_or_missing=2178, unable_to=1177, same_issue=1114, not_working=1043
+C3 | Elogio ou testemunho positivo | 79998 (33.98%) | topo=54815 | replies=25183
+  Regras mais frequentes: thanks=53664, great=18557, helpful=5266, awesome=4588, appreciate=4154, amazing=4044, useful=3221, clear=2273
+C4 | Critica, frustracao ou objecao | 5407 (2.30%) | topo=3393 | replies=2014
+  Regras mais frequentes: hard_difficult=1557, limitations=787, pain=729, slow_laggy=610, terrible=575, expensive=495, missing_feature=185, not_free=172
+C5 | Recomendacao, divulgacao ou encaminhamento a recursos/alternativas | 15797 (6.71%) | topo=6249 | replies=9548
+  Regras mais frequentes: docs_forum_community=6148, template_resource=3416, private_classes=3336, my_channel=1539, playlist=1307, use_instead=1024, github_repo=368, contact_me=262
+C6 | Outros, humor, spam ou ruido evidente | 6782 (2.88%) | topo=3856 | replies=2926
+  Regras mais frequentes: real_laugh_emoji=2896, lol_haha=2690, laugh_emoji=2066, bro_only=966, only_link=183, wtf=125, minimal_noise=99, bruh=90
+
+Combinacoes mais frequentes
+sem_classe: 83651 (35.53%)
+C3: 49487 (21.02%)
+C1: 40177 (17.07%)
+C1+C3: 17628 (7.49%)
+C2: 6199 (2.63%)
+C5: 5802 (2.46%)
+C1+C2: 5370 (2.28%)
+C6: 4001 (1.70%)
+C1+C2+C3: 3615 (1.54%)
+C1+C5: 3397 (1.44%)
+C4: 2293 (0.97%)
+C2+C3: 2290 (0.97%)
+C3+C5: 1993 (0.85%)
+C2+C5: 1530 (0.65%)
+C1+C3+C5: 1324 (0.56%)
+
+Exemplos por classe
+C1 | Pergunta, pedido de ajuda ou pedido de tutorial
+  - sir when you write arithmetic then you jump directly on performing addition what is this you need to show us how to do all things
+  - Please could you add how to add single sign on feature as well
+  - where are your old out system video's? i took a 2 week break and now i cant find them where are they ?
+C2 | Relato de problema, erro, falha ou limitacao operacional
+  - Sar arithmetic operation mein new file banaa raha hun to vah error show kar raha hai
+  - sir input veriable and result veriable error show on the screen please detailed video
+  - Same problem
+C3 | Elogio ou testemunho positivo
+  - Very good example on how to make the most out of agent workbench, congrats!
+  - Thanks a lot João! The Agent Workbench is indeed a great tool for this.
+  - Thanks a lot David! :)
+C4 | Critica, frustracao ou objecao
+  - These all are repetitive videos😢
+  - looks terrible to be honest
+  - You would need to use a virtual connector and it has limitations which would limit the number of rows you can work with for data aggregations
+C5 | Recomendacao, divulgacao ou encaminhamento a recursos/alternativas
+  - Sir please sir kya ap pura padaoge course to mai start karu agar demo ho to bata dena
+  - I have not done any work with Postgres. I will recommend checking or posting your query on forums in case someone has done something similar https://community.powerplatform.com
+  - Its Power Apps - check playlist called "Gen Pages" on my channel
+C6 | Outros, humor, spam ou ruido evidente
+  - hahaha, the struggle is real!
+  - Gen pages is looking super amazing and the thing is that, it would get better with time. What would it look like a year from now?? 🤣🤣. Thanks for always trying to keep us ahead of the curve. Appreciated
+  - Bruh, this is straight up cheating This looks incredible.

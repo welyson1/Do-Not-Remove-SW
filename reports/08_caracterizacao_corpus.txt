@@ -1,0 +1,43 @@
+Relatorio de caracterizacao do corpus
+========================================================================
+Periodo de estudo: 2018-01-01 a 2025-09-30
+Videos no corpus final em ingles: 16019
+Comentarios no corpus final em ingles: 265301
+Comentarios no corpus analitico do periodo: 260791
+Comentarios fora do periodo analitico: 4510
+Canais no corpus: 4852
+Visualizacoes somadas dos videos: 196604871
+Curtidas somadas dos comentarios no periodo: 334556
+Usuarios unicos nos comentarios do periodo: 118744
+
+Top 30 plataformas em titulo e descricao dos videos
+ 1. Power Apps: 2166
+ 2. FileMaker: 1809
+ 3. Flutterflow: 1537
+ 4. Bubble.io: 1452
+ 5. AppSheet: 962
+ 6. n8n: 741
+ 7. Dynamics 365 Business Central: 711
+ 8. Boomi: 686
+ 9. Retool: 644
+10. OutSystems: 554
+11. Zoho Creator: 474
+12. Microsoft Power Platform: 403
+13. App Engine: 399
+14. WaveMaker: 340
+15. SAP Build: 286
+16. Salesforce Platform: 284
+17. YiDA: 232
+18. appsmith: 223
+19. Axpert: 195
+20. Reasy: 179
+21. Simplifier: 145
+22. Aapli: 145
+23. Caspio: 141
+24. Quickbase: 136
+25. sterlo: 135
+26. Baserow: 133
+27. Canonic: 120
+28. VisionX: 116
+29. Kissflow: 108
+30. OnBase: 99

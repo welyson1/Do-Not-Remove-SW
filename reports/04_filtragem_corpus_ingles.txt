@@ -1,0 +1,18 @@
+Relatorio de filtragem do corpus em ingles
+========================================================================
+Comentarios de entrada na comparacao: 612760
+Videos de entrada apos filtragem tematica: 29669
+Comentarios com maioria em ingles (2 de 3): 281948
+Videos analisados com comentarios: 29640
+Limiar operacional aplicado por video: > 50%
+Videos finais no corpus em ingles: 16019
+Comentarios finais no corpus em ingles: 265301
+Comentarios no periodo analitico [2018-01-01, 2025-10-01): 260791
+Comentarios antes de 2018-01-01: 4
+Comentarios em 2025-10 ou depois: 4499
+Comentarios do dia 2025-09-30 preservados com a nova regra: 809
+CSV de comparacao precisou de reparo em leitura: nao
+
+Arquivo de videos: 06_videos_corpus_ingles.csv
+Arquivo de comentarios: 07_comentarios_corpus_ingles.csv
+Arquivo de comentarios no periodo: 08_comentarios_corpus_ingles_periodo.csv
