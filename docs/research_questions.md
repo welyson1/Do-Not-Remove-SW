@@ -12,41 +12,7 @@ This research mines **YouTube comments** as a large-scale naturalistic corpus of
 
 ---
 
-## RQ1 — What are the main discussion topics in the LCNC YouTube community?
-
-**Goal:** Identify the latent thematic structure of user comments using unsupervised topic modelling.
-
-**Method:**
-- Corpus: 227,811 English comments on 16,019 LCNC videos.
-- Model: BERTopic with transformer embeddings (`all-MiniLM-L6-v2` or equivalent).
-- Post-processing: 101 substantive topics curated and grouped into **11 macro-themes** by manual inspection of c-TF-IDF representative terms.
-- Noise topics excluded: IDs -1, 0, 2, 13, 20, 21, 22, 29, 35, 36, 68, 92, 94, 102, 106, 107.
-
-**Key macro-themes identified:**
-1. Plataformas e ecossistemas (14.47%)
-2. Desenvolvimento de aplicações, UI e lógica (16.96%)
-3. Funcionalidades e casos de uso (8.80%)
-4. Dados, arquivos e artefatos (6.96%)
-5. Integração, backend e infraestrutura (7.98%)
-6. Automação e workflows (3.73%)
-7. IA, agentes e conversação (3.30%)
-8. Aprendizagem, tutoriais e capacitação (9.41%)
-9. Comunidade, engajamento e interação (18.42%)
-10. Suporte, erros e limitações (6.51%)
-11. Governança, custos, licenças e disponibilidade (3.46%)
-
-**Temporal analysis:** Z-score heatmaps identify months where each topic surges significantly above its baseline, revealing adoption waves and event-driven spikes.
-
-**Output artifacts:**
-- `figures/fig04_evolucao_temporal_topicos.pdf` — temporal z-score heatmap
-- `figures/fig05_heatmap_plataformas_topicos.pdf` — platform–topic co-occurrence heatmap
-- `figures/fig06_evolucao_macrotemas.pdf` — macro-theme proportion over time
-- `reports/06_analise_topicos.txt`
-- `reports/07_macrotemas.txt`
-
----
-
-## RQ2 — How does the LCNC discourse community evolve over time and across platforms?
+## RQ1 — What are the scale, temporal distribution, public interaction, and platform coverage of the retrieved video-centered corpus in low-code ecosystems?
 
 **Goal:** Characterise the corpus temporally and by platform to understand growth patterns and platform-specific communities.
 
@@ -69,41 +35,45 @@ This research mines **YouTube comments** as a large-scale naturalistic corpus of
 
 ---
 
-## RQ3 — What types of user intent are expressed in LCNC YouTube comments?
+## RQ2 — What software engineering and learning concerns are represented in the video-centered corpus and how are they distributed across development activities?
 
-**Goal:** Classify comments into six functional discourse categories using a lexical rule-based classifier validated by human annotation.
+**Goal:** Identify the latent thematic structure of user comments using unsupervised topic modelling and map them to development activities.
 
-**Six classes:**
+**Method:**
+- Corpus: 227,811 English comments on 16,019 LCNC videos.
+- Model: BERTopic with transformer embeddings (`all-MiniLM-L6-v2` or `all-mpnet-base-v2` equivalent).
+- Post-processing: 101 substantive topics curated and grouped into **11 macro-themes** and mapped to **6 development activities**.
+- Noise topics excluded manually based on c-TF-IDF terms.
 
-| ID | Label | Definition |
-|----|-------|-----------|
-| C1 | **Pergunta / pedido de ajuda** | Question, request for explanation, guidance, example, or tutorial |
-| C2 | **Problema operacional** | Operational problem, error, failure, blocking issue, or concrete difficulty using a tool |
-| C3 | **Elogio / testemunho positivo** | Praise, gratitude, positive testimonial, or recognition of utility |
-| C4 | **Crítica / avaliação negativa** | Critique, frustration, objection, perceived cost problem, limitation, or negative evaluation |
-| C5 | **Recomendação / divulgação** | Recommendation, referral to resources/alternatives, including links, channels, courses, communities |
-| C6 | **Ruído / humor / informalidade** | Humour, evident noise, dominant informality, isolated links, or low-analytical comments |
+**Key development activities identified (Share of technical texts):**
+1. Construction and implementation (39.10%)
+2. Platform and capability understanding (28.53%)
+3. Knowledge acquisition and onboarding (11.53%)
+4. Orchestration and emerging capability (8.61%)
+5. Maintenance and troubleshooting (7.98%)
+6. Governance, licensing and cost (4.24%)
 
-**Annotation design:**
-- **Pilot round:** 300 comments (50 per class), stratified by class, used for inter-rater agreement calibration.
-- **Full round:** 4,800 comments (800 per class), 3 annotators.
-- The pilot is a strict subset of the full sample.
-- Final label: majority vote (2-of-3 annotators).
-- Agreement metrics: Krippendorff's α and Fleiss's κ per class.
+*(Note: Non-technical interaction, such as praise and social engagement, accounted for 18.42% of all texts and was separated from the technical share.)*
 
-**Classifier precision audit:**
-- 300 comments audited (50 per class) by a single expert reviewer using the Streamlit app (`app_auditoria_rq3.py`).
-- **Macro-precision: 92.33%** (95% CI: overall high, see `reports/10_precisao_classes.txt`).
-- Per-class: C1=96%, C2=92%, C3=96%, C4=88%, C5=92%, C6=90%.
+**Output artifacts:**
+- `reports/06_analise_topicos.txt`
+- `reports/07_macrotemas.txt`
 
-**Running the annotation app:**
-```bash
-streamlit run 05_caracterizacao_corpus/app_auditoria_rq3.py
-```
+---
 
-**See also:**
-- `05_caracterizacao_corpus/MANUAL_ROTULACAO_RQ3.md` — annotator instructions
-- `05_caracterizacao_corpus/PROTOCOLO_AUDITORIA_RQ3.md` — audit protocol
+## RQ3 — How does the composition of these concerns change over the observation window and what does this trajectory indicate about the boundary of low-code ecosystems in public discussion?
+
+**Goal:** Understand how the identified topics and macro-themes evolve over the 7-year period, revealing shifts in community focus (e.g., the rise of AI agents and workflow automation).
+
+**Method:**
+- Temporal analysis: Monthly composition of the 11 macrothemes among distinct texts.
+- Z-score heatmaps identify months where each topic surges significantly above its baseline, revealing adoption waves and event-driven spikes.
+- Platform–topic co-occurrence matrices map specific concerns to particular platforms.
+
+**Output artifacts:**
+- `figures/fig04_evolucao_temporal_topicos.pdf` — temporal z-score heatmap
+- `figures/fig05_heatmap_plataformas_topicos.pdf` — platform–topic co-occurrence heatmap
+- `figures/fig06_evolucao_macrotemas.pdf` — macro-theme proportion over time
 
 ---
 
@@ -118,10 +88,7 @@ Three tools were used in a majority-vote scheme to reduce false positives in Eng
 A comment is labelled English if at least 2-of-3 tools agree. A video is included if >50% of its comments are majority-English. Sensitivity analysis of this threshold is documented in `reports/03_sensibilidade_limiar.txt` and `figures/fig01_sensibilidade_limiar_idioma.png`.
 
 ### Topic Noise Removal
-Topics labelled -1 by BERTopic (outlier) and topics with IDs {0, 2, 13, 20, 21, 22, 29, 35, 36, 68, 92, 94, 102, 106, 107} were manually reviewed and excluded as noise or out-of-scope content before analysis.
-
-### No Generative AI in Curation
-The manual curation of topics into macro-themes was done entirely by inspection of c-TF-IDF representative terms and exemplar comments — no chat LLM or generative model was used in this decision.
+Residual, incoherent, generic, and out-of-scope clusters were excluded. The manual curation of topics into macro-themes was done entirely by inspection of c-TF-IDF representative terms and exemplar comments — no chat LLM or generative model was used in this decision.
 
 ---
 

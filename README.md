@@ -16,11 +16,11 @@ Using a corpus of **260,791 English-language YouTube comments** across **16,019 
 
 | RQ | Question |
 |----|---------|
-| **RQ1** | What are the main discussion topics in the LCNC YouTube community? |
-| **RQ2** | How does the LCNC discourse community evolve over time and across platforms? |
-| **RQ3** | What types of user intent are expressed in LCNC YouTube comments? |
+| **RQ1** | What are the scale, temporal distribution, public interaction, and platform coverage of the retrieved video-centered corpus in low-code ecosystems? |
+| **RQ2** | What software engineering and learning concerns are represented in the video-centered corpus and how are they distributed across development activities? |
+| **RQ3** | How does the composition of these concerns change over the observation window and what does this trajectory indicate about the boundary of low-code ecosystems in public discussion? |
 
-The pipeline spans **five stages**: raw data ingestion → thematic filtering → language detection → topic modelling (BERTopic) → corpus characterisation and multi-label classification.
+The pipeline spans **five stages**: raw data ingestion → thematic filtering → language detection → topic modelling (BERTopic) → corpus characterisation.
 
 ---
 
@@ -52,16 +52,7 @@ github_repo/
 │   └── gerar_tabelas_latex_topicos.py     ← Generate LaTeX topic tables
 │
 ├── 05_caracterizacao_corpus/
-│   ├── etapa_09_caracterizar_corpus.py    ← Stage 05a: corpus metrics
-│   ├── etapa_10_testar_sanidade_classes.py
-│   ├── etapa_11_preparar_auditoria_precisao_classes.py
-│   ├── etapa_12_calcular_precisao_classes.py
-│   ├── etapa_13_amostrar_comentarios_rq3.py
-│   ├── etapa_14_calcular_concordancia_rq3.py
-│   ├── etapa_14_unificar_rotulos_rq3.py   ← Inter-rater agreement + final labels
-│   ├── app_auditoria_rq3.py              ← Streamlit labelling audit app
-│   ├── MANUAL_ROTULACAO_RQ3.md           ← Annotator instructions (PT)
-│   └── PROTOCOLO_AUDITORIA_RQ3.md        ← Audit protocol (PT)
+│   └── etapa_09_caracterizar_corpus.py    ← Stage 05: corpus metrics
 │
 ├── figures/                               ← Publication-ready figures
 │   ├── fig01_sensibilidade_limiar_idioma.png
@@ -79,16 +70,11 @@ github_repo/
 │   ├── 05_cobertura_topicos.txt
 │   ├── 06_analise_topicos.txt
 │   ├── 07_macrotemas.txt
-│   ├── 08_caracterizacao_corpus.txt
-│   ├── 09_sanidade_classes.txt
-│   ├── 10_precisao_classes.txt
-│   ├── 11_amostra_rotulacao_4800.txt
-│   ├── 12_amostra_piloto_concordancia_300.txt
-│   └── 13_unificacao_rotulos_rq3.txt
+│   └── 08_caracterizacao_corpus.txt
 │
 └── docs/
     ├── pipeline_overview.md           ← Detailed stage-by-stage guide
-    └── research_questions.md         ← RQ methodology + annotation design
+    └── research_questions.md         ← RQ methodology
 ```
 
 ---
@@ -110,7 +96,7 @@ github_repo/
 
 Power Apps · FileMaker · FlutterFlow · Bubble.io · AppSheet · n8n · Dynamics 365 · Boomi · Retool · OutSystems
 
-### Topic Macro-Themes (RQ1)
+### Topic Macro-Themes (RQ2)
 
 | Macro-theme | Topics | Comments | Share |
 |-------------|--------|----------|-------|
@@ -125,20 +111,6 @@ Power Apps · FileMaker · FlutterFlow · Bubble.io · AppSheet · n8n · Dynami
 | Automation & workflows | 4 | 6,732 | 3.7% |
 | Governance, cost & licensing | 5 | 6,252 | 3.5% |
 | AI, agents & conversation | 3 | 5,957 | 3.3% |
-
-### Classifier Precision (RQ3)
-
-Macro-precision of the lexical classifier across 6 classes (300 expert-audited items):
-
-| Class | Definition | Precision |
-|-------|-----------|-----------|
-| C1 | Questions / help requests | 96.0% |
-| C2 | Operational problems | 92.0% |
-| C3 | Praise / positive testimonials | 96.0% |
-| C4 | Criticism / negative evaluations | 88.0% |
-| C5 | Recommendations / referrals | 92.0% |
-| C6 | Noise / humour / informality | 90.0% |
-| **Overall** | | **92.33%** |
 
 ---
 
@@ -273,9 +245,8 @@ To run stages 02, 03, and 04 of the pipeline (which require text analysis), you 
 
 If you wish to bypass text rehydration and the heavy NLP modeling (BERTopic), you can use the pre-calculated ID mappings provided in the repository to directly reproduce the paper's charts and statistical analyses:
 - **`04_topicos/02_comentarios_com_topicos_ids.csv`**: Maps each `comment_id` to its calculated `topic_id` and `published_at` date.
-- **`05_caracterizacao_corpus/06_auditoria_precisao_classes_ids.csv`**: Maps each audited `comment_id` to its predicted and manual intent labels.
 
-*Note: For stages 05 and onwards, pre-calculated outputs (e.g., topic assignments and labels) are provided in the repository so you can reproduce the statistical analysis and charts without needing to rehydrate the text data.*
+*Note: For stages 05 and onwards, pre-calculated outputs (e.g., topic assignments) are provided in the repository so you can reproduce the statistical analysis and charts without needing to rehydrate the text data.*
 
 ### Expected Rehydrated Input Schema
 
@@ -309,18 +280,6 @@ If you wish to bypass text rehydration and the heavy NLP modeling (BERTopic), yo
 ### Requesting Access
 
 To request access to any further processed (anonymised) data for academic purposes, please contact the corresponding author via the paper's institutional contact.
-
----
-
-## Labelling App (RQ3)
-
-The Streamlit app for auditing the precision of the lexical classifier can be run locally:
-
-```bash
-streamlit run 05_caracterizacao_corpus/app_auditoria_rq3.py
-```
-
-It requires the audit template CSV (`05_caracterizacao_corpus/06_auditoria_precisao_classes.csv`) to be present. See [`docs/research_questions.md#rq3`](docs/research_questions.md#rq3) and the annotator manual in `05_caracterizacao_corpus/MANUAL_ROTULACAO_RQ3.md`.
 
 ---
 
@@ -372,9 +331,9 @@ Utilizando um corpus de **260.791 comentários em inglês** em **16.019 vídeos*
 
 | QP | Questão |
 |----|---------|
-| **QP1** | Quais são os principais tópicos de discussão na comunidade LCNC no YouTube? |
-| **QP2** | Como a comunidade de discurso LCNC evolui ao longo do tempo e entre plataformas? |
-| **QP3** | Quais tipos de intenção do usuário são expressos nos comentários LCNC do YouTube? |
+| **QP1** | Qual é a escala, distribuição temporal, interação pública e cobertura de plataforma do corpus centrado em vídeo recuperado nos ecossistemas low-code? |
+| **QP2** | Quais preocupações de engenharia de software e aprendizado estão representadas no corpus centrado em vídeo e como elas são distribuídas pelas atividades de desenvolvimento? |
+| **QP3** | Como a composição dessas preocupações muda ao longo da janela de observação e o que essa trajetória indica sobre os limites dos ecossistemas low-code na discussão pública? |
 
 ---
 
@@ -430,7 +389,7 @@ O pipeline tem 5 estágios principais:
 | 02 | Filtragem temática (termos LCNC) | `etapa_01_filtrar_tematica.py` |
 | 03 | Detecção de idioma (ensemble fastText + langdetect + langid) | `etapa_02–04_*.py` |
 | 04 | Análise de tópicos (BERTopic + macrotemas) | `etapa_05–08_*.py` |
-| 05 | Caracterização do corpus + classificação RQ3 | `etapa_09–14_*.py` |
+| 05 | Caracterização do corpus | `etapa_09_caracterizar_corpus.py` |
 
 Para detalhes completos, veja [`docs/pipeline_overview.md`](docs/pipeline_overview.md).
 
@@ -457,9 +416,8 @@ Para executar as etapas 02, 03 e 04, você precisará reidratar os comentários 
 
 Caso você queira pular a reidratação de texto e a modelagem pesada (BERTopic), você pode usar os mapeamentos pré-calculados fornecidos no repositório para reproduzir diretamente os gráficos e análises estatísticas do artigo:
 - **`04_topicos/02_comentarios_com_topicos_ids.csv`**: Mapeia cada `comment_id` ao seu `topic_id` calculado e data de publicação.
-- **`05_caracterizacao_corpus/06_auditoria_precisao_classes_ids.csv`**: Mapeia cada `comment_id` auditado aos seus rótulos de intenção (previstos e manuais).
 
-*Nota: Para as etapas 05 em diante, os resultados pré-calculados (tópicos e rótulos) estão disponíveis nas respectivas pastas para que a análise estatística seja possível sem reidratar o texto.*
+*Nota: Para as etapas 05 em diante, os resultados pré-calculados (tópicos) estão disponíveis nas respectivas pastas para que a análise estatística seja possível sem reidratar o texto.*
 
 Para solicitar acesso aos dados adicionais anonimizados para fins acadêmicos, entre em contato com o autor correspondente via o artigo publicado.
 
