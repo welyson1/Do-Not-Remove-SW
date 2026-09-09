@@ -119,8 +119,8 @@ Power Apps · FileMaker · FlutterFlow · Bubble.io · AppSheet · n8n · Dynami
 | Figure | Description |
 |--------|-------------|
 | ![fig01](figures/fig01_sensibilidade_limiar_idioma.png) | **Fig 1** — CDF of % English comments per video, with threshold sensitivity analysis at 50%, 70%, and 90%. |
-| **Fig 2** `figures/fig02_metricas_corpus.pdf` | Six-panel time series: videos, channels, comments, views, likes, unique users (monthly, 2018–2025). |
-| **Fig 3** `figures/fig03_heatmap_top30_plataformas.pdf` | Z-score heatmap of quarterly video mentions for the top-30 LCNC platforms. |
+| [**Fig 2**](figures/fig02_metricas_corpus.pdf) | Six-panel time series: videos, channels, comments, views, likes, unique users (monthly, 2018–2025). |
+| [**Fig 3**](figures/fig03_heatmap_top30_plataformas.pdf) | Z-score heatmap of quarterly video mentions for the top-30 LCNC platforms. |
 | ![fig04](figures/fig04_evolucao_temporal_topicos.png) | **Fig 4** — Z-score heatmap of monthly comment volume per topic ID (temporal analysis). |
 | ![fig05](figures/fig05_heatmap_plataformas_topicos.png) | **Fig 5** — Z-score heatmap of platform × topic co-occurrence. |
 | ![fig06](figures/fig06_evolucao_macrotemas.png) | **Fig 6** — Proportion of comments per macro-theme over time (monthly, 2018–2025). |
@@ -288,9 +288,9 @@ To request access to any further processed (anonymised) data for academic purpos
 If you use this pipeline or data in your research, please cite:
 
 ```bibtex
-@article{AUTHOR_YEAR,
-  title   = {Title of the Paper},
-  author  = {Author, Welyson and Co-Author, Name},
+@article{decarlos2025lowcode,
+  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+  author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
   year    = {2025},
   doi     = {10.XXXX/XXXXXXX}
@@ -426,9 +426,9 @@ Para solicitar acesso aos dados adicionais anonimizados para fins acadêmicos, e
 ## Citação
 
 ```bibtex
-@article{AUTOR_ANO,
-  title   = {Título do Artigo},
-  author  = {Autor, Welyson and Coautor, Nome},
+@article{decarlos2025lowcode,
+  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+  author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
   year    = {2025},
   doi     = {10.XXXX/XXXXXXX}
