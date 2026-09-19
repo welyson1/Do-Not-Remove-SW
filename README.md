@@ -12,7 +12,7 @@
 
 This repository contains the full data processing and analysis pipeline for a master's research study on the **discourse community around low-code and no-code (LCNC) development platforms** on YouTube.
 
-Using a corpus of **260,791 English-language YouTube comments** across **16,019 videos** and **4,852 channels** collected between 2018 and 2025, the study addresses three research questions:
+Using a corpus of **260,791 English-language YouTube comments** across **16,019 videos** and **4,852 channels** collected between 2018 and 2026, the study addresses three research questions:
 
 | RQ | Question |
 |----|---------|
@@ -85,7 +85,7 @@ github_repo/
 
 | Metric | Value |
 |--------|-------|
-| Study period | Jan 2018 – Sep 2025 |
+| Study period | Jan 2018 – Sep 2026 |
 | Videos | 16,019 |
 | Channels | 4,852 |
 | Comments (analytical period) | 260,791 |
@@ -119,11 +119,11 @@ Power Apps · FileMaker · FlutterFlow · Bubble.io · AppSheet · n8n · Dynami
 | Figure | Description |
 |--------|-------------|
 | ![fig01](figures/fig01_sensibilidade_limiar_idioma.png) | **Fig 1** — CDF of % English comments per video, with threshold sensitivity analysis at 50%, 70%, and 90%. |
-| [**Fig 2**](figures/fig02_metricas_corpus.pdf) | Six-panel time series: videos, channels, comments, views, likes, unique users (monthly, 2018–2025). |
+| [**Fig 2**](figures/fig02_metricas_corpus.pdf) | Six-panel time series: videos, channels, comments, views, likes, unique users (monthly, 2018–2026). |
 | [**Fig 3**](figures/fig03_heatmap_top30_plataformas.pdf) | Z-score heatmap of quarterly video mentions for the top-30 LCNC platforms. |
 | ![fig04](figures/fig04_evolucao_temporal_topicos.png) | **Fig 4** — Z-score heatmap of monthly comment volume per topic ID (temporal analysis). |
 | ![fig05](figures/fig05_heatmap_plataformas_topicos.png) | **Fig 5** — Z-score heatmap of platform × topic co-occurrence. |
-| ![fig06](figures/fig06_evolucao_macrotemas.png) | **Fig 6** — Proportion of comments per macro-theme over time (monthly, 2018–2025). |
+| ![fig06](figures/fig06_evolucao_macrotemas.png) | **Fig 6** — Proportion of comments per macro-theme over time (monthly, 2018–2026). |
 
 ---
 
@@ -288,11 +288,11 @@ To request access to any further processed (anonymised) data for academic purpos
 If you use this pipeline or data in your research, please cite:
 
 ```bibtex
-@article{decarlos2025lowcode,
-  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+@article{decarlos2026lowcode,
+  title   = {Redistributed, Not Removed: Software Engineering Concerns in Eight Years of Public Low-Code Discussion},
   author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
-  year    = {2025},
+  year    = {2026},
   doi     = {10.XXXX/XXXXXXX}
 }
 ```
@@ -427,12 +427,10 @@ Para solicitar acesso aos dados adicionais anonimizados para fins acadêmicos, e
 
 ```bibtex
 @article{decarlos2025lowcode,
-  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+  title   = {Redistributed, Not Removed: Software Engineering Concerns in Eight Years of Public Low-Code Discussion},
   author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
-  year    = {2025},
+  year    = {2026},
   doi     = {10.XXXX/XXXXXXX}
 }
 ```
-
-*(Atualizar com o DOI real após a publicação.)*
