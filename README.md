@@ -289,7 +289,7 @@ If you use this pipeline or data in your research, please cite:
 
 ```bibtex
 @article{decarlos2025lowcode,
-  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+  title   = {Redistributed, Not Removed: Software Engineering Concerns in Eight Years of Public Low-Code Discussion},
   author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
   year    = {2025},
@@ -427,7 +427,7 @@ Para solicitar acesso aos dados adicionais anonimizados para fins acadêmicos, e
 
 ```bibtex
 @article{decarlos2025lowcode,
-  title   = {Low-Code Platforms Do Not Remove Software Engineering Concerns: Evidence from Public YouTube Discussions},
+  title   = {Redistributed, Not Removed: Software Engineering Concerns in Eight Years of Public Low-Code Discussion},
   author  = {de Carlos, Welyson F. P. and de Souza, Erica F. and Felizardo, Katia Romero and Ferreira, Carlos H. G.},
   journal = {Information and Software Technology},
   year    = {2025},
